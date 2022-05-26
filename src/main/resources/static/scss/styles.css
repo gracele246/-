@@ -1,0 +1,136 @@
+.navbarLink {
+    font-family:'Luckiest Guy';
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 5px #c4932f;
+}
+
+.listMenuTitle {
+    font-family: 'Luckiest Guy';
+    color:white;
+    text-shadow: 0px 0px 5px #2fc43b;
+    font-size: 3em;
+}
+
+.cardTitle {
+    font-family: 'Luckiest Guy';
+    color:white;
+    text-shadow: 0px 0px 5px black;
+    font-size: 2em;
+    overflow-wrap: break-word;
+}
+
+div.listMenu {
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    overflow-wrap: normal;
+    background-color: var(--blue);
+    padding-top:15px;
+    padding-bottom:15px;
+    width:100%;
+}
+
+.listMenuCard {
+    flex: 0 0 auto;
+    background-color: var(--tan);
+    width: 500px;
+}
+
+img.listMenuImg {
+    padding:20px;
+}
+
+div::-webkit-scrollbar {
+    width: 19px;
+
+}
+div::-webkit-scrollbar-track {
+    background: var(--tan);
+}
+div::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    border-radius: 15px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+.imgSquareCrop {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.imgHomer{
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imgStar {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.reviewScoreText {
+    font-size:1em;
+    font-family: Cambria;
+    color: #5575ef;
+}
+
+.tagText {
+    font-size:1em;
+    font-family: Cambria;
+    color: #dc2de8;
+    background-color: var(--blue);
+    width: 75px;
+    border-radius: 35px;
+    text-align:center;
+    margin-right:10px;
+}
+
+body::-webkit-scrollbar {
+    width: 19px;
+
+}
+body::-webkit-scrollbar-track {
+    background: var(--tan);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    border-radius: 15px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+.aboutCard {
+    background-color: var(--tan);
+    padding: 15px;
+    width: 300px;
+}
+
+.aboutName {
+    font-family:'Luckiest Guy';
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px black;
+    overflow-wrap: break-word;
+}
+
+.aboutDonut {
+    font-family:'Cambria';
+    color: var(--blue);
+    font-size: 1.5em;
+}
+
+.pageTitle {
+    font-family: 'Luckiest Guy';
+    color:white;
+    text-shadow: 0px 0px 5px black;
+    font-size: 7em;
+    text-align:center;
+}
