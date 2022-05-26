@@ -29,6 +29,9 @@ public class ABController {
 
     @GetMapping("/pricing")
     public String pricing() { return "pricing"; }
+
+    @GetMapping("/tutors")
+    public String tutors() { return "tutors"; }
 /*
     @GetMapping("/coingame")
 

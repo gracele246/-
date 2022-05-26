@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout1}" lang="en">
+
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <title>Tutors Page</title>
+        <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    </div>
+</head>
+
+<body style="background-color:#ffefd7">
+<div layout:fragment="content" th:remove="tag">
+    <!-- This is the homepage image like that humongous banner at the beginning -->
+    <!-- This is the homepage image like that humongous banner at the beginning -->
+    <div id="home" >
+        <center><img style="margin-top:69px" class="home-image" src="images/tutors2.png" width=100% height=100%></center>
+    </div>
+
+    <!-- This was that part about the mission statement and stuff like that-->
+    <center><div class="lightsection" style="min-height:300px">
+        <div style="padding-top:30px;">
+            <h1 class="sectionTitle"><strong>Tutors</strong></h1>
+
+        </div>
+
+        <!--
+            Full star: ★
+            Empty star: ☆
+
+
+        -->
+
+        <div id="about" class="lightsection"><center>
+            <div style="width:80%;padding-top:50px">
+                <div class="row justify-content-around">
+                    <!-- These are where the images of the club members come in-->
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/abhijay.jpg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Abhijay Deevi</b></h4>
+                            <p>Math and Coding<!--<br>★★★★★<br>2010 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/IaytW9BxavI" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/praveen2.jpg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Praveen Natarajan</b></h4>
+                            <p>All types of Math<!--<br>★☆☆☆☆<br>20 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/8K9M5iHJiXk" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/Eyaad.png" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Eyaad Mir</b></h4>
+                            <p>SAT Math, Coding & Other Math<br><!--★★★★☆<br>5847 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/8yUROI-azJ0" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="margin-top:50px" class="row justify-content-around">
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/patrick.jpg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Patrick Zhu</b></h4>
+                            <p>Math, English, Coding<!--<br>★★★★☆<br>5847 ratings--><br>UC Berkeley</p>
+                            <a href="https://youtu.be/Pr0a9rj4UV0" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/samson.png" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Samson Huynh</b></h4>
+                            <p>Math & Science<br><!--★★★★☆<br>5847 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/YW-_2rYZmEw" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/madeleine.jpeg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Madeleine Boedeker</b></h4>
+                            <p>Math, Science, SAT<br><!--★★★★☆<br>5847 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/taF4GvN6K9Q" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </center></div>
+
+
+
+        <div id="about1" class="lightsection"><center>
+            <div style="width:80%;padding-top:0px">
+                <div class="row justify-content-around">
+
+
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/cp.jpg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Neil Sahai</b></h4>
+                            <p>Math and Science<br><!--★★★★★<br>2010 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/r__bpdrjnEQ" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/anusri.jpg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Anusri Thokachichu</b></h4>
+                            <p>Math and Science<br><!--★☆☆☆☆<br>20 ratings--><br>Del Norte High School</p>
+                            <a href="https://www.youtube.com/watch?v=tfH8a5SacEE" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/ethan.JPG" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Ethan Cao</b></h4>
+                            <p>SAT Math, Science, & APUSH<!--<br>★★★★☆<br>5847 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/2mXJJfUcxwY" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:50px" class="row justify-content-around">
+
+                    <!-- Change the kian stuff -->
+
+                    <div class="teamImagecontainer">
+                        <img class="teamImage" src="images/kian.jpg" alt="Avatar">
+                        <div style="margin-top:10px" class="container">
+                            <h4><b>Kian Kishimoto</b></h4>
+                            <p>Math & ACT<br><!--★★★★☆<br>5847 ratings--><br>Del Norte High School</p>
+                            <a href="https://youtu.be/s4_iAzWSQQE" target="_blank">Introduction Video</a>
+                        </div>
+                    </div>
+                    <!--
+                              <div class="teamImagecontainer">
+                                <img class="teamImage" src="images/abhijay.jpg" alt="Avatar">
+                                <div style="margin-top:10px" class="container">
+                                  <h4><b>Bruh</b></h4>
+                                  <p>SAT Math & English<br>★★★★☆<br>5847 ratings</p>
+                                </div>
+                              </div>
+
+                              <div class="teamImagecontainer">
+                                <img class="teamImage" src="images/abhijay.jpg" alt="Avatar">
+                                <div style="margin-top:10px" class="container">
+                                  <h4><b>Annaihialate</b></h4>
+                                  <p>SAT Math & English<br>★★★★☆<br>5847 ratings</p>
+                                </div>
+                              </div>
+                          </div>
+                          </center></div>
+
+                        -->
+                    <!--
+                    <div class="row justify-content-around">
+                    <div style="padding-top:50px;width:50%;padding-left:10px;">
+                      <img src="images/dnhsmembers/abhijay.jpg" style="border-radius:50%" width=200px>
+                    </div>
+                    <div style="padding-top:35px;width:50%;padding-left:5px">
+                      <h1 class="sectionTitle" style="text-align:left">Abhijay Deevi</h1>
+                      <p class="sectionDescription" style="text-align:left">Del Norte High School 2022</p>
+                      <p class="sectionDescription" style="text-align:left">Founder</p>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </center>
+        </div>
+    </div>
+
+</body>
+</html>
