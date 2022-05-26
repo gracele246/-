@@ -240,7 +240,7 @@ a:hover{
   color:white;
   text-shadow: 2px 2px 5px #202020;
   /* background-color: #404040; */
-  background-image: url("../images/background1.jfif");
+  background-image: url("../images/a2student.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -585,4 +585,182 @@ table, th, td {
 
 /* Everything from here has to do with the login page */
 
+/* Everything here is a transfer of the CSS */
+
+html  {
+  scroll-behavior: smooth;
+}
+/* This is all stuff for the parallax if you can figure that out
+  body {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .parallax {
+    transform-style: inherit;
+    color:white;
+    width:100%;
+    height:auto;
+    padding-bottom:70px;
+  }
+
+  .parallax h1 {
+
+  }
+
+  .parallax, .parallax:before {
+    background: 50% 50% / cover;
+  }
+
+  .parallax::before {
+    bottom: 0;
+    content: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(images/notebookbackground1.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+  }
+
+  .parallax * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align:center;
+    margin: 0;
+    padding: 1em 0;
+  }
+*/
+
+.buttons {
+  background-color:#c41010;
+  border-radius:18px;
+  padding:10px;
+  color:white;
+  font-weight:bold;
+  font-family: Poppins;
+  font-size:1.5em;
+  position:relative;
+  top:30px;
+  box-shadow: 0px 0px 5px black;
+  animation: fadein 2s;
+}
+
+
+.sectionTitle {
+  font-family: Poppins;
+  font-size:3em;
+  padding-top:1em;
+  padding-bottom:-1em;
+  animation: fadein 2s;
+}
+
+.sectionDescription {
+  font-family: Poppins;
+  font-size:1.5em;
+  animation: fadein 2s;
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+.teamImagecontainer {
+  font-family: Poppins;
+  padding:5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+
+}
+
+.teamImage {
+  border-radius: 5px 5px 0 0;
+  height:300px;
+  width:300px;
+  object-fit:cover;
+}
+
+.lightsection {
+  background: linear-gradient(to right, #ffefd7, #ffefd8);
+  color:black;
+  width:100%;
+  height:auto;
+  padding-bottom:70px;
+}
+
+.darksection {
+  background: linear-gradient(to right, #303030, #202020);
+  color:white;
+  width:100%;
+  height:auto;
+  padding-bottom:70px;
+}
+
+.darksectiontwo {
+  background: linear-gradient(to right, #303030, #202020);
+  color:white;
+  width:100%;
+  height:auto;
+  padding-bottom:10px;
+}
+
+/*
+.imagesection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/notebookbackground1.jpg);
+  background-size: 100% 100%;
+  opacity: 100%;
+  color:white;
+  width:100%;
+  height:auto;
+  padding-bottom:70px;
+}
+*/
+
+.redsection {
+  background: linear-gradient(to right, #a51119, #c41010);
+  color:white;
+  width:100%;
+  height:auto;
+  padding-bottom:10px;
+}
+
+.footer {
+  position:relative;
+  background-color:#c41010;
+  width:100%;
+  display:inline-block;
+  box-shadow: 0px -1px 10px black;
+}
+
+a.buttons:hover {
+  color: #303030;
+  text-decoration: none;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body::-webkit-scrollbar {
+  width: 19px; /* width of the entire scrollbar */
+
+}
+body::-webkit-scrollbar-track {
+  background: #303030; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg,#972a2a, #e94040); /* color of the scroll thumb */
+}
+
+.navbar-nav > li > .dropdown-menu { background-color: #f85454; }
 
