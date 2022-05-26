@@ -794,7 +794,7 @@ body, html {
 }
 
 .calendar {
-  background: #2b4450;
+  background: #c41010 ;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
   height: 501px;
@@ -810,7 +810,7 @@ body, html {
 }
 
 .current-date {
-  border-bottom: 1px solid rgba(73, 114, 133, .6);
+  border-bottom: 1px solid #a51119;
   display: flex;
   justify-content: space-between;
   padding: 30px 40px;
@@ -861,7 +861,7 @@ body, html {
 }
 
 .weeks span.active {
-  background: #f78536;
+  background: #ffefd8;
   border-radius: 50%;
 }
 
@@ -876,7 +876,7 @@ body, html {
 
 .event:after {
   content: '•';
-  color: #f78536;
+  color: #ffefd8;
   font-size: 1.4em;
   position: absolute;
   right: -4px;
@@ -893,7 +893,7 @@ body, html {
 .back input {
   background: none;
   border: none;
-  border-bottom: 1px solid rgba(73, 114, 133, .6);
+  border-bottom: 1px solid #a51119;
   color: #dfebed;
   font-size: 1.4em;
   font-weight: 300;
@@ -933,7 +933,7 @@ body, html {
 
 .actions {
   bottom: 0;
-  border-top: 1px solid rgba(73, 114, 133, .6);
+  border-top: 1px solid #a51119;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -953,16 +953,16 @@ body, html {
 }
 
 .actions button:first-of-type {
-  border-right: 1px solid rgba(73, 114, 133, .6);
+  border-right: 1px solid #a51119;
 }
 
 .actions button:hover {
-  background: #497285;
+  background: #a51119;
   cursor: pointer;
 }
 
 .actions button:active {
-  background: #5889a0;
+  background: #a51119;
   outline: none;
 }
 
