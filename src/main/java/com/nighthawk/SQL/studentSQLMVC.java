@@ -1,4 +1,6 @@
 package com.nighthawk.SQL;
+import com.nighthawk.SQL.student;
+import com.nighthawk.SQL.studentSQLrepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,22 +12,32 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import javax.validation.Valid;
 import java.util.List;
 @Controller
-
-public class studentSQLMVC implements WebMvcConfigurer{
+public class studentSQLMVC {
     @Autowired
     private studentSQLrepo repository;
-    @GetMapping("/studentindex")
+    @GetMapping("/student")
     public String student(Model model){
+        repository.save(new student(1, 5));
         List<student> list=repository.listAll();
         System.out.println(list);
         model.addAttribute("list", list);
-        return "index";
+        return "student";
     }
+    @PostMapping("/SQL/studentcreate")
+    public String studentSave(@PathVariable int id, @PathVariable int grade){
+        student student= new student(id,grade);
+        repository.save(student);
+        return "redirect:/";
+
+
+    }
+
     @GetMapping("/SQL/studentcreate")
     public String studentAdd(student student ){
         return "student";
     }
-    @PostMapping("/SQL/studentcreate")
+
+   /* @PostMapping("/SQL/studentcreate")
     public String studentSave(@Valid student student, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
             return "student";
@@ -36,6 +48,8 @@ public class studentSQLMVC implements WebMvcConfigurer{
 
 
     }
+
+    */
     @GetMapping("/SQL/studentupdate/{id}")
     public String studentUpdate(@PathVariable("id") int id, Model model){
         model.addAttribute("student", repository.get(id));

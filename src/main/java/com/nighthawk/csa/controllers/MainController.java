@@ -1,5 +1,6 @@
 package com.nighthawk.csa.controllers;
 
+import com.nighthawk.SQL.student;
 import com.nighthawk.csa.starters.ImageInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -93,5 +94,7 @@ public class MainController {
     public String courseTri2(Model model) {
         model.addAttribute("url", "https://padlet.com/jmortensen7/csa2022tri2");
         return "course/timelines";
+
     }
+
 }

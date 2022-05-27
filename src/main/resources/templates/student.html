@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout1}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <!-- Start of head content specific to page -->
+    <title>Student</title>
+    <link th:href="@{/styles/styles.css}" rel="stylesheet" />
+    <!-- End of head content specific to page -->
+</div></head>
+
+<body><div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+    <div class="contact" style="height: 35vh;">
+        <div th:each="student : ${list}">
+            <div th:text="${student.grade}"></div>
+            <div th:text="${student.id}"></div>
+
+        </div>
+    </div>
+    <!-- End of body content specific to page -->
+</div></body>
+
+</html>

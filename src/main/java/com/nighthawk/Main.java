@@ -1,4 +1,4 @@
-package com.nighthawk.csa;
+package com.nighthawk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
