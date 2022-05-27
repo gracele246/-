@@ -1,12 +1,7 @@
 package com.nighthawk.csa.controllers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-
-import java.util.ArrayList;
 
 @Controller
 public class ABController {
@@ -22,10 +17,19 @@ public class ABController {
         return "ghibliapi"; }
 
     @GetMapping("/login")
-    public String login() { return "login"; }
+    public String login() { return "input"; }
 
     @GetMapping("/classes")
     public String classes() { return "classes"; }
+
+    @GetMapping("/pricing")
+    public String pricing() { return "pricing"; }
+
+    @GetMapping("/tutors")
+    public String tutors() { return "tutors"; }
+
+    @GetMapping("/calendar")
+    public String calendar() { return "calendar"; }
 /*
     @GetMapping("/coingame")
 
