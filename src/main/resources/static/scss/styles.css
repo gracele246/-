@@ -1,136 +1,90 @@
-.navbarLink {
-    font-family:'Luckiest Guy';
-    color: white;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 5px #c4932f;
+body, html {padding: 0; margin: 0; overflow-x: hidden; height: 100%;}
+
+.colors {
+    --background: #282a36;
+    --selected: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #5575ef;
+    --cyan: #8be9fd;
+    --green: #26c5e8;
+    --orange: #ffb86c;
+    --pink: #bd93f9;
+    --red: #bd93f9;
+    --yellow: #f1fa8c;
 }
 
-.listMenuTitle {
-    font-family: 'Luckiest Guy';
-    color:white;
-    text-shadow: 0px 0px 5px #2fc43b;
-    font-size: 3em;
-}
-
-.cardTitle {
-    font-family: 'Luckiest Guy';
-    color:white;
-    text-shadow: 0px 0px 5px black;
-    font-size: 2em;
-    overflow-wrap: break-word;
-}
-
-div.listMenu {
-    display:flex;
+#colContainer {
+    width: 120%;
     overflow-y: hidden;
-    overflow-x: scroll;
-    overflow-wrap: normal;
-    background-color: var(--blue);
-    padding-top:15px;
-    padding-bottom:15px;
-    width:100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
-.listMenuCard {
-    flex: 0 0 auto;
-    background-color: var(--tan);
-    width: 500px;
+.noteContainer {
+    height: auto;
+    width: 50%;
+    border-radius: 25px;
+    background-color: var(--selected);
+    color: var(--green);
+    padding: 25px;
+    display: inline-grid;
+    margin: 1%;
+    animation: slide-up 0.4s ease;
+    overflow:hidden;
 }
+.noteContainer::-webkit-scrollbar {display: none;}
+.noteContainer {-ms-overflow-style: none;scrollbar-width: none;}
 
-img.listMenuImg {
-    padding:20px;
-}
-
-div::-webkit-scrollbar {
-    width: 19px;
-
-}
-div::-webkit-scrollbar-track {
-    background: var(--tan);
-}
-div::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
-    border-radius: 15px;
-    border: 5px solid transparent;
-    background-clip: content-box;
-}
-
-.imgSquareCrop {
+.note {
     width: 250px;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
+    border-radius: 13px;
+    background-color: var(--comment);
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    animation: slide-up 0.2s ease;
 }
 
-.imgHomer{
-    width: 700px;
-    height: 400px;
+.minimize {
+    height: 0 !important;
+}
+
+.textarea, .input {
+    background-color: transparent;
+    border: none;
+}
+.textarea:focus,.input:focus {outline: none;}
+
+.textarea {
+    height: 194px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    resize: none;
 }
 
-.imgStar {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
+.kan-button {
+    font-family: monospace;
+    height:27px;
+    width:27px;
+    padding:0px 5px 5px 5px !important;
+    border-radius: 14px !important;
 }
 
-.reviewScoreText {
-    font-size:1em;
-    font-family: Cambria;
-    color: #5575ef;
+
+
+.btn-outline-light:hover {
+    color: var(--comment) !important;
 }
 
-.tagText {
-    font-size:1em;
-    font-family: Cambria;
-    color: #dc2de8;
-    background-color: var(--blue);
-    width: 75px;
-    border-radius: 35px;
-    text-align:center;
-    margin-right:10px;
-}
-
-body::-webkit-scrollbar {
-    width: 19px;
-
-}
-body::-webkit-scrollbar-track {
-    background: var(--tan);
-}
-body::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
-    border-radius: 15px;
-    border: 5px solid transparent;
-    background-clip: content-box;
-}
-
-.aboutCard {
-    background-color: var(--tan);
-    padding: 15px;
-    width: 300px;
-}
-
-.aboutName {
-    font-family:'Luckiest Guy';
-    color: white;
-    font-size: 2em;
-    text-shadow: 0px 0px 5px black;
-    overflow-wrap: break-word;
-}
-
-.aboutDonut {
-    font-family:'Cambria';
-    color: var(--blue);
-    font-size: 1.5em;
-}
-
-.pageTitle {
-    font-family: 'Luckiest Guy';
-    color:white;
-    text-shadow: 0px 0px 5px black;
-    font-size: 7em;
-    text-align:center;
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
