@@ -797,7 +797,7 @@ body, html {
   background: #c41010 ;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
-  height: 501px;
+  height: 45%;
   perspective: 1000;
   transition: .9s;
   transform-style: preserve-3d;
