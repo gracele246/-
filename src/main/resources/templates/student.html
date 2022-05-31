@@ -10,35 +10,40 @@
     <!-- End of head content specific to page -->
 </div></head>
 
-<body><div layout:fragment="content" th:remove="tag">
+<body style="left:auto;right:auto;">
+
+<div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
-    <div class="contact" style="height: 35vh;">
-        <table>
-            <th>#</th>
-            <th>Student ID</th>
-            <th>Grade</th>
-            <tr th:each="student : ${list}">
-                <td th:text="${student.id}"></td>
-                <td th:text="${student.studentID}"></td>
-                <td th:text="${student.grade}"></td>
-            </tr>
-        </table>
-        <p>Student Add</p>
-        <form method="POST" action="/post">
-            <label for="id"></label>
-            <input id="id" name="studentId">
-            <label for="grade"></label>
-            <input id="grade" name="grade">
-            <button class="btn">Submit</button>
-        </form>
-        <p>Student Delete</p>
-        <form method="POST" action="/delete">
-            <label>#</label>
-            <input name="id">
-            <button class="btn">Submit</button>
-        </form>
-    </div>
+    <center>
+        <div class="contact" style="height: 35vh;padding-top:50px;">
+            <table style="border: 1px solid;">
+                <th style="padding: 15px;background-color: #972a2a;color:white;">#</th>
+                <th style="padding: 15px;background-color: #972a2a;color:white;">Student ID</th>
+                <th style="padding: 15px;background-color: #972a2a;color:white;">Grade</th>
+                <tr th:each="student : ${list}">
+                    <td style="text-align:center;padding: 15px;" th:text="${student.id}"></td>
+                    <td style="text-align:center;padding: 15px;" th:text="${student.studentID}"></td>
+                    <td style="text-align:center;padding: 15px;" th:text="${student.grade}"></td>
+                </tr>
+            </table>
+            <p>Student Add</p>
+            <form method="POST" action="/post">
+                <label for="id"></label>
+                <input id="id" name="studentId">
+                <label for="grade"></label>
+                <input id="grade" name="grade">
+                <button class="btn">Submit</button>
+            </form>
+            <p>Student Delete</p>
+            <form method="POST" action="/delete">
+                <label>#</label>
+                <input name="id">
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </center>
     <!-- End of body content specific to page -->
-</div></body>
+</div>
+</body>
 
 </html>
