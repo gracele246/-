@@ -17,19 +17,19 @@ public class studentSQLMVC {
     private studentSQLrepo repository;
     @GetMapping("/student")
     public String student(Model model){
-        repository.save(new student(1, 5));
         List<student> list=repository.listAll();
         System.out.println(list);
         model.addAttribute("list", list);
         return "student";
     }
     @PostMapping("/SQL/studentcreate")
-    public String studentSave(@PathVariable int id, @PathVariable int grade){
-        student student= new student(id,grade);
+    @ResponseBody
+    public void studentSave(
+            @RequestParam(name="id", required = false) int id,
+            @RequestParam(name="grade", required = false) int grade
+    ){
+        student student = new student(id,grade);
         repository.save(student);
-        return "redirect:/";
-
-
     }
 
     @GetMapping("/SQL/studentcreate")
@@ -83,17 +83,17 @@ public class studentSQLMVC {
     public ResponseEntity<student> getstudent(@PathVariable long id){
         return new ResponseEntity<>(repository.get(id), HttpStatus.OK);
      }
-     @RequestMapping(value="/delete/{id}", method = RequestMethod.DELETE)
-    public ResponseEntity<Object> deletestudent(@PathVariable long id){
+     @RequestMapping(value="/delete", method = RequestMethod.POST)
+    public ResponseEntity<Object> deletestudent(@RequestParam ("id") long id) {
         repository.delete(id);
-        return new ResponseEntity<>("" + id+ "deleted", HttpStatus.OK);
+        return new ResponseEntity<>("" + id+ " deleted", HttpStatus.OK);
      }
     @RequestMapping (value="/post", method = RequestMethod.POST)
-    public ResponseEntity<Object> poststudent(@RequestParam ("stundentId") int studentId,
+    public ResponseEntity<Object> poststudent(@RequestParam ("studentId") int studentId,
                                               @RequestParam ("grade") int grade){
-        student student= new student(studentId, grade);
+        student student = new student(studentId, grade);
         repository.save(student);
-        return new ResponseEntity<>(studentId+"has been added", HttpStatus.CREATED);
+        return new ResponseEntity<>(studentId+" has been added", HttpStatus.CREATED);
     }
 
 
