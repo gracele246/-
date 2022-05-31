@@ -13,6 +13,7 @@ public class student {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private int studentID;
+    private String name;
     private int grade;
     public student(int studentID, int grade){
         this.studentID=studentID;
