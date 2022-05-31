@@ -12,7 +12,6 @@ public class student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @NotEmpty
     private int studentID;
     private int grade;
     public student(int studentID, int grade){
