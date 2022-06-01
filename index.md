@@ -12,16 +12,18 @@ Success Idea: Successfully create a self-sufficient website where people can eas
 
 ![image](https://user-images.githubusercontent.com/73254122/171503972-8d35a471-0e2e-44fd-b505-56687ed651ea.png)
 
-## 团队责任 (Team Roles) 
+## Team Roles
 
-**Product Owner** - The one and only MORT!!! He will be our supervising officers to ensure that his company, "The 商店," reaches new heights and gets tons of money!!!
+**Product Owner** -  The product owner has to be the president of A2LearningTree since he will guide the changes and see to the end of the project. This is Abhijay Deevi. He will ensure that the proper changes are made to ensure that the new website will fit with the company's agenda.
 
-**Scrum Master** - Abhijay Deevi - The dubshottical leader of the project as he skillfully manages the entire team of asians. 
+**Scrum Master** - Abhijay Deevi - Abhijay Deevi is also the scrum master of the group. We will manage the team and assign the tasks as well as work on the project.. 
 
-**Github Manager/Database** - Grace Le - The killshottical database developer and the controller of the godly github.
+**Github Manager/Database/Web API** - Grace Le - Grace Le will be working on managing the github by keeping the readme up to date and control the Jekyll. She will also keep track of all the documentation. In addition to the github manager, she will also be working on the databases for things like the login and student information. Also working on calender API for function schedule
 
-**Web Design/Database** - Ak Prathipati - The poppable website + CSS designer as well as the dubshottical database developer. 
+**Web Design/Database** - Ak Prathipati - Akshit Prathipati will be the main frontend of the project as he will change the website to look more aesthetically pleasing. In addition to the web design, he will work with Grace on the databases that are required for this project.
 
-**Deployement Officer** - Eric Wang - He goes into the depths of the world and into the code and deployes our killshottical website.
+**Deployement Officer** - Eric Wang - Eric Wang will be woring mostly on the deployment through the use of AWS. He will also work on the project and help with specific parts.
+
+
 
 
