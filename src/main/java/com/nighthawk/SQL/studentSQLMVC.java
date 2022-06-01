@@ -97,6 +97,16 @@ public class studentSQLMVC {
         repository.save(student);
         return new ResponseEntity<>(studentId+" has been added", HttpStatus.CREATED);
     }
+    @RequestMapping (value="/update", method = RequestMethod.POST)
+    public ResponseEntity<Object> updatestudent(@RequestParam ("id") int id,
+                                                @RequestParam ("studentId") int studentId,
+                                                @RequestParam ("grade") int grade,
+                                                @RequestParam ("name") String name){
+        repository.delete(id);
+        student student = new student(studentId, grade, name);
+        repository.save(student);
+        return new ResponseEntity<>(studentId+" has been updated", HttpStatus.CREATED);
+    }
 
 
 
