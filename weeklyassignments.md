@@ -1,7 +1,7 @@
 
 {% include navigation.html %}
 
-# 每周作业 (Weekly assignments)
+# Weekly assignments
 
 ## Week 1 Assignment
 
