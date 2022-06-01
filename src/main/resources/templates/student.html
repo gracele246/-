@@ -18,12 +18,14 @@
         <div class="contact" style="height: 35vh;padding-top:50px;">
             <table style="border: 1px solid;">
                 <th style="padding: 15px;background-color: #972a2a;color:white;">#</th>
+                <th style="padding: 15px;background-color: #972a2a;color:white;">Name</th>
                 <th style="padding: 15px;background-color: #972a2a;color:white;">Student ID</th>
 
                 <th style="padding: 15px;background-color: #972a2a;color:white;">Grade</th>
                 <tr th:each="student : ${list}">
                     <td style="text-align:center;padding: 15px;" th:text="${student.id}"></td>
                     <td style="text-align:center;padding: 15px;" th:text="${student.studentID}"></td>
+                    <td style="text-align:center;padding: 15px;" th:text="${student.name}"></td>
 
                     <td style="text-align:center;padding: 15px;" th:text="${student.grade}"></td>
                 </tr>
@@ -32,10 +34,10 @@
             <form method="POST" action="/post">
                 <label for="id"></label>
                 <input id="id" name="studentId">
-                <label for="id"></label>
-
                 <label for="grade"></label>
                 <input id="grade" name="grade">
+                <label for="name"></label>
+                <input id="name" name="name">
                 <button class="btn">Submit</button>
             </form>
             <p>Student Delete</p>
