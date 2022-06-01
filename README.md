@@ -39,7 +39,7 @@ This is currently what the website looks like. We want to completely change the 
 
 Scrum Master - Abhijay Deevi - Abhijay Deevi is also the scrum master of the group. We will manage the team and assign the tasks as well as work on the project. 
 
-Github Manager/Database - Grace Le - Grace Le will be working on managing the github by keeping the readme up to date and control the Jekyll. She will also keep track of all the documentation. In addition to the github manager, she will also be working on the databases for things like the login and student information. 
+Github Manager/Database/Web API - Grace Le - Grace Le will be working on managing the github by keeping the readme up to date and control the Jekyll. She will also keep track of all the documentation. In addition to the github manager, she will also be working on the databases for things like the login and student information. Also working on calender API for function schedule
 
 Web Design/Database - Akshit Prathipati - Akshit Prathipati will be the main frontend of the project as he will change the website to look more aesthetically pleasing. In addition to the web design, he will work with Grace on the databases that are required for this project. 
 

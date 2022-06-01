@@ -26,9 +26,10 @@ public class studentSQLMVC {
     @ResponseBody
     public void studentSave(
             @RequestParam(name="id", required = false) int id,
-            @RequestParam(name="grade", required = false) int grade
+            @RequestParam(name="grade", required = false) int grade,
+            @RequestParam(name="name", required = false) String name
     ){
-        student student = new student(id,grade);
+        student student = new student(id,grade,name);
         repository.save(student);
     }
 
@@ -90,10 +91,21 @@ public class studentSQLMVC {
      }
     @RequestMapping (value="/post", method = RequestMethod.POST)
     public ResponseEntity<Object> poststudent(@RequestParam ("studentId") int studentId,
-                                              @RequestParam ("grade") int grade){
-        student student = new student(studentId, grade);
+                                              @RequestParam ("grade") int grade,
+                                              @RequestParam ("name") String name){
+        student student = new student(studentId, grade, name);
         repository.save(student);
         return new ResponseEntity<>(studentId+" has been added", HttpStatus.CREATED);
+    }
+    @RequestMapping (value="/update", method = RequestMethod.POST)
+    public ResponseEntity<Object> updatestudent(@RequestParam ("id") int id,
+                                                @RequestParam ("studentId") int studentId,
+                                                @RequestParam ("grade") int grade,
+                                                @RequestParam ("name") String name){
+        repository.delete(id);
+        student student = new student(studentId, grade, name);
+        repository.save(student);
+        return new ResponseEntity<>(studentId+" has been updated", HttpStatus.CREATED);
     }
 
 

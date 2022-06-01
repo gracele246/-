@@ -19,23 +19,23 @@
             <table style="border: 1px solid;">
                 <th style="padding: 15px;background-color: #972a2a;color:white;">#</th>
                 <th style="padding: 15px;background-color: #972a2a;color:white;">Student ID</th>
-
                 <th style="padding: 15px;background-color: #972a2a;color:white;">Grade</th>
+                <th style="padding: 15px;background-color: #972a2a;color:white;">Name</th>
                 <tr th:each="student : ${list}">
                     <td style="text-align:center;padding: 15px;" th:text="${student.id}"></td>
                     <td style="text-align:center;padding: 15px;" th:text="${student.studentID}"></td>
-
                     <td style="text-align:center;padding: 15px;" th:text="${student.grade}"></td>
+                    <td style="text-align:center;padding: 15px;" th:text="${student.name}"></td>
                 </tr>
             </table>
             <p>Student Add</p>
             <form method="POST" action="/post">
-                <label for="id"></label>
+                <label for="id">ID</label>
                 <input id="id" name="studentId">
-                <label for="id"></label>
-
-                <label for="grade"></label>
+                <label for="grade">Grade</label>
                 <input id="grade" name="grade">
+                <label for="name">Name</label>
+                <input id="name" name="name">
                 <button class="btn">Submit</button>
             </form>
             <p>Student Delete</p>
@@ -44,7 +44,20 @@
                 <input name="id">
                 <button class="btn">Submit</button>
             </form>
+            <p>Student Update</p>
+            <form method="POST" action="/update">
+                <label>#</label>
+                <input name="id">
+                <label>ID</label>
+                <input name="studentId">
+                <label>Grade</label>
+                <input name="grade">
+                <label>Name</label>
+                <input name="name">
+                <button class="btn">Submit</button>
+            </form>
         </div>
+
     </center>
     <!-- End of body content specific to page -->
 </div>
