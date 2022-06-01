@@ -1,20 +1,16 @@
 
-# The 商店 (Shop)
-
-Pronounced "shāng diàn"
+# A2 Learning
 
 {% include navigation.html %}
 
-## 我们是什么 (What are we?)
+## What is our project?
 
-We are the asian storekeepers!!! We created an asian store for everyone so that they can see the amazing asian products that they can buy right here from America! Our products range from food items all the way to different asian accessories.
-
-Some of our ideas include having a marketplace page where people can buy different foods and items. We also have a currency exchange where you can turn white money to yellow money. (You can make money from playing our asian games!!!!!!). API that has chinese music where people can purchase different songs and play them to their heart's content. We also will create a database where people can save their information and save the items they have. We will also incorporate a google translate sort of thing where people can translate some english words into chinese. 
+A2LearningTree is a tutoring company! It's much better than private tutors and other companies because it's main focus us making the tutoring process fun, easy, and fast. The first benefit is that you can always choose the tutor and schedule a class based on the students' own schedule. Second, the tutors all understand exactly what they need to teach, since they all took that exact class in the past. This allows the tutor to teach at the correct pace, which helps the student understand the subject better. There are numerous high level tutors that teach various different subjects, allowing students to learn and understand anything that they choose.
 
 
-Success Idea: The success is when we are able to get mostly the marketplace fully functional because that is the most important part of the project. 
+Success Idea: Successfully create a self-sufficient website where people can easily sign up for classes without any difficulties.
 
-![image](https://user-images.githubusercontent.com/73254122/159048628-7dd1e36f-8873-43bc-8058-16267f4215d9.png)
+[![image](https://user-images.githubusercontent.com/73254122/159048628-7dd1e36f-8873-43bc-8058-16267f4215d9.png)](https://user-images.githubusercontent.com/55414361/169873504-30466a83-a21c-4ecf-84a6-5ef98fcd8f3b.png)
 
 ## 团队责任 (Team Roles) 
 
