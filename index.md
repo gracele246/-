@@ -10,7 +10,7 @@ A2LearningTree is a tutoring company! It's much better than private tutors and o
 
 Success Idea: Successfully create a self-sufficient website where people can easily sign up for classes without any difficulties.
 
-[![image](https://user-images.githubusercontent.com/73254122/159048628-7dd1e36f-8873-43bc-8058-16267f4215d9.png)](https://user-images.githubusercontent.com/55414361/169873504-30466a83-a21c-4ecf-84a6-5ef98fcd8f3b.png)
+![image](https://user-images.githubusercontent.com/73254122/171503972-8d35a471-0e2e-44fd-b505-56687ed651ea.png)
 
 ## 团队责任 (Team Roles) 
 
