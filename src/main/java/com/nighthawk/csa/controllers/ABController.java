@@ -30,6 +30,12 @@ public class ABController {
 
     @GetMapping("/calendar")
     public String calendar() { return "calendar"; }
+
+    /*
+    @GetMapping("/student")
+    public String student() { return "student"; }
+
+     */
 /*
     @GetMapping("/coingame")
 
