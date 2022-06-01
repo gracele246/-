@@ -1,6 +1,6 @@
 {% include navigation.html %}
 
-### 赞助 (Sponsor Assignment)
+### Sponsor Assignment
 
 People | Github Repo | Github Pages | Commits |
 -------------  | -------------- | -------------- | -------------- |
