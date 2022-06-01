@@ -1,2 +1,1 @@
-# theshop
-Pronounced "gǒu shǐ"
+# A2 Learning
