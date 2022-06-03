@@ -38,19 +38,6 @@ public class studentSQLMVC {
         return "student";
     }
 
-   /* @PostMapping("/SQL/studentcreate")
-    public String studentSave(@Valid student student, BindingResult bindingResult){
-        if (bindingResult.hasErrors()){
-            return "student";
-
-        }
-        repository.save(student);
-        return "redirect:/";
-
-
-    }
-
-    */
     @GetMapping("/SQL/studentupdate/{id}")
     public String studentUpdate(@PathVariable("id") int id, Model model){
         model.addAttribute("student", repository.get(id));
@@ -85,9 +72,9 @@ public class studentSQLMVC {
         return new ResponseEntity<>(repository.get(id), HttpStatus.OK);
      }
      @RequestMapping(value="/delete", method = RequestMethod.POST)
-    public ResponseEntity<Object> deletestudent(@RequestParam ("id") long id) {
+    public String deletestudent(@RequestParam ("id") long id) {
         repository.delete(id);
-        return new ResponseEntity<>("" + id+ " deleted", HttpStatus.OK);
+        return "redirect:/student";
      }
     @RequestMapping (value="/post", method = RequestMethod.POST)
     public String poststudent(@RequestParam ("studentId") int studentId,
@@ -98,14 +85,14 @@ public class studentSQLMVC {
         return "redirect:/student";
     }
     @RequestMapping (value="/update", method = RequestMethod.POST)
-    public ResponseEntity<Object> updatestudent(@RequestParam ("id") int id,
+    public String updatestudent(@RequestParam ("id") int id,
                                                 @RequestParam ("studentId") int studentId,
                                                 @RequestParam ("grade") int grade,
                                                 @RequestParam ("name") String name){
         repository.delete(id);
         student student = new student(studentId, grade, name);
         repository.save(student);
-        return new ResponseEntity<>(studentId+" has been updated", HttpStatus.CREATED);
+        return "redirect:/student";
     }
 
 
