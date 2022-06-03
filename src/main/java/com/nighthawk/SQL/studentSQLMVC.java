@@ -90,12 +90,12 @@ public class studentSQLMVC {
         return new ResponseEntity<>("" + id+ " deleted", HttpStatus.OK);
      }
     @RequestMapping (value="/post", method = RequestMethod.POST)
-    public ResponseEntity<Object> poststudent(@RequestParam ("studentId") int studentId,
+    public String poststudent(@RequestParam ("studentId") int studentId,
                                               @RequestParam ("grade") int grade,
                                               @RequestParam ("name") String name){
         student student = new student(studentId, grade, name);
         repository.save(student);
-        return new ResponseEntity<>(studentId+" has been added", HttpStatus.CREATED);
+        return "redirect:/student";
     }
     @RequestMapping (value="/update", method = RequestMethod.POST)
     public ResponseEntity<Object> updatestudent(@RequestParam ("id") int id,
