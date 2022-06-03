@@ -7,7 +7,7 @@
 
 A2LearningTree is a tutoring company! It's much better than private tutors and other companies because it's main focus us making the tutoring process fun, easy, and fast. The first benefit is that you can always choose the tutor and schedule a class based on the students' own schedule. Second, the tutors all understand exactly what they need to teach, since they all took that exact class in the past. This allows the tutor to teach at the correct pace, which helps the student understand the subject better. There are numerous high level tutors that teach various different subjects, allowing students to learn and understand anything that they choose.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V3h9AOhhdK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=V3h9AOhhdK4
 
 Success Idea: Successfully create a self-sufficient website where people can easily sign up for classes without any difficulties.
 
